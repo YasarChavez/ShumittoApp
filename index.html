@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shumitto App</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <!-- Google Icons-->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <!--  -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- Selector de colores -->
+        <button id="menu" onclick="toggleDiv()"><span class="material-symbols-outlined"> menu </span></button>
+        <div id="miDiv" class="container mt-3">
+            <label for="color1">Fondo Ejercicios:</label>
+            <input class="colorPicker" type="color" id="color1" value="#00ff00" />
+            <br>
+            <label for="color2">Fondo Descansos:</label>
+            <input class="colorPicker" type="color" id="color2" value="#ff0000" />
+            <br>
+            <label for="color3">Color Fondo App:</label>
+            <input class="colorPicker" type="color" id="color3" value="#f2f2f2" />
+            <div>
+                <button id="aplicar"><span class="material-symbols-outlined"> save </span></button>
+            </div>
+        </div>
+
+        <div id="cuadro" class="container mt-3">
+            <div class="input-container">
+                <img id="logo" src="img/logo.svg" alt="logo-shumitto" />
+                <br />
+                <label for="exercise-time">Ejercicios (Segundos):</label>
+                <input type="number" id="exercise-time" value="60" />
+                <br />
+                <label for="rest-time">Descansos (Segundos):</label>
+                <input type="number" id="rest-time" value="30" />
+                <br />
+                <label for="num-sets">Sets:</label>
+                <br>
+                <input type="number" id="num-sets" value="4" />
+            </div>
+
+            <div class="timer-container">
+                <div class="timer"></div>
+                <button id="start-btn"><span class="material-symbols-outlined"> play_circle </span></button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/hide.js"></script>
+    </body>
+</html>
